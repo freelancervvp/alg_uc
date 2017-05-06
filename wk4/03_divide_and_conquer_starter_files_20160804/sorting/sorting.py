@@ -16,7 +16,7 @@ def partition3(a, l, r):
 			else:
 				a[j - k], a[j] = a[j], a[j - k]
 	a[l], a[j] = a[j], a[l]
-	return j, j + k
+	return j - k + 1, j
 
 def partition2(a, l, r):
     x = a[l]
